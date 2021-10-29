@@ -10,8 +10,16 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h1>회원가입</h1>
 
-
-
+<form action="/myjsp_study/02request/day03/34signup-process.jsp" method = "post">
+	<input type="text" name="name" id="" placeholder="아이디">
+	<br>
+	<input type="email" name="email" id=""placeholder="이메일">
+	<br>
+	<input type="password" name="password" id=""placeholder="암호">
+	<br>
+	<input type="submit" value="가입">
+</form>
 </body>
 </html>

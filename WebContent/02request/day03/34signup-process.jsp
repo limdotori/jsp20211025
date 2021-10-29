@@ -10,8 +10,13 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h1>회원 정보</h1>
+id : <%=request.getParameter("name") %> <br>
+email : <%= request.getParameter("email") %> <br>
+pw : <%= request.getParameter("password") %>
 
+<hr>
 
-
+<a href="/myjsp_study/02request/day03/34signup-process.jsp">33번 파일로 돌아가기</a>
 </body>
 </html>
