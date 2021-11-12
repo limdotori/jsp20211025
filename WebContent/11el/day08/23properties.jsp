@@ -17,6 +17,7 @@
 Map<String, Bean05> map = new HashMap<>();
 Bean05 obj = new Bean05();
 Bean03 info = new Bean03();
+
 obj.setCity("ny");
 obj.setInfo(info);
 
