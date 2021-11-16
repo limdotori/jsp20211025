@@ -12,10 +12,19 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>choose</h1>
+<hr>
+<c:url value="25process.jsp" var="addSpringBookUrl">
+	<c:param name="title" value="jstl"/>
+	<c:param name="writer" value="sons"/>
+	<c:param name="price" value="20000"/>
+	<c:param name="stock" value="25"/>
+	<c:param name="publisher" value="pbu"/>
+</c:url>
+
+<a href="${addSpringBookUrl }"> 스프링 책 추가</a>
 
 
-<%--12장 내용~ --%>
+
 </body>
 </html>
 

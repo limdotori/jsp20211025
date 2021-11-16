@@ -1,22 +1,58 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.util.*" %>
+<%@ page import="sample03javabean.*" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%request.setCharacterEncoding("utf-8");%>
+<% request.setCharacterEncoding("utf-8"); %>
 
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="<%= request.getContextPath() %>/resource/css/icon/css/all.css">
+
 <title>Insert title here</title>
 </head>
 <body>
-<h1>choose</h1>
+<!--295p  -->
+<%
+Bean06 book = new Bean06("java", "son", 300, "apub", 10);
+pageContext.setAttribute("attr", book);
+%>
 
+수량 : ${attr.stock } <br>
 
-<%--12장 내용~ --%>
+<c:set target="${attr }" property="stock" value="11" />
+
+수량 : ${attr.stock } <br>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 	
+
+
+
+
+
+
+
+
+
+
+
+
 
 
