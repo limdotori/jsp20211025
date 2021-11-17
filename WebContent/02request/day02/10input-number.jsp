@@ -9,24 +9,17 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+<!-- form>input[type=number][name=param$]*2+input[type=submit] -->
 <form action="">
-<input type="date" name="param1" > <br>
-<input type="number" name="param2"> <br>
-<input type="submit">
+	<input type="number" name="param1">
+	<input type="number" name="param2">
+	<input type="submit">
 </form>
 
 <hr>
-
 <%= request.getParameter("param1") %> <br>
+<%= request.getParameter("param2") %> <br>
 
-<%
-// int a = request.getParameter("param2"); //xxx
-String param2 = request.getParameter("param2");
-int a = Integer.parseInt(param2);
-//numberFormatException
-
-
-out.print(a);
-%>
 </body>
 </html>
