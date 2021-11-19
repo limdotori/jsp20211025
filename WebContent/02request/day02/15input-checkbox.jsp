@@ -14,7 +14,8 @@
 <form action="">
 	<input type="checkbox" name="movie" value="action" id="">액션
 	<input type="checkbox" name="movie" value="romance" id="">로맨스
-	<input type="checkbox" name="movie" value="thriller" id="">스릴러
+	<input type="check
+	box" name="movie" value="thriller" id="">스릴러
 	<input type="checkbox" name="movie" value="family" id=""> 가족
 	<input type="submit" value="전송">
 </form>

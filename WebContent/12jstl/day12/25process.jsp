@@ -30,7 +30,7 @@ list.add(book);
 response.sendRedirect("25list-book-tag.jsp");
 %>
 
- 
+
 
 
 

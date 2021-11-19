@@ -36,7 +36,6 @@ if (params != null) {
 	}
 }
 %>
-
 </ul>
 </body>
 </html>
