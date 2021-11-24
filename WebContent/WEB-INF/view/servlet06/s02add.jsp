@@ -14,16 +14,44 @@
 <title>Insert title here</title>
 </head>
 <body>
-  <!-- .container>.row>.col>h1>lorem3 -->
+  <!-- .container>.row>.col>h1{할 일 추가} -->
   <div class="container">
-  	<div class="row">
-  		<div class="col">
-  			<h1>Lorem ipsum dolor.</h1>
-  		</div>
-  	</div>
+    <div class="row">
+      <div class="col-2">
+        <nav class="nav flex-column">
+          <a class="nav-link" href="${pageContext.request.contextPath }/servlet06/main">메인</a>
+          <a class="nav-link" href="${pageContext.request.contextPath }/servlet06/add">추가</a>
+          <a class="nav-link" href="${pageContext.request.contextPath }/servlet06/list">목록</a>
+        </nav>
+      </div>
+      <div class="col-10">
+        <h1>할 일 추가</h1>
+        <form action="${pageContext.request.contextPath }/servlet06/add" method="post">
+
+          <!-- .form-group>label[for=todo1]{할 일}+input#todo1.form-control -->
+          <div class="form-group">
+            <label for="todo1">할 일</label>
+            <input type="text" id="todo1" class="form-control" name="todo">
+          </div>
+
+          <input type="submit" class="btn btn-primary" value="추가">
+        </form>
+      </div>
+    </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+

@@ -14,16 +14,35 @@
 <title>Insert title here</title>
 </head>
 <body>
-  <!-- .container>.row>.col>h1>lorem3 -->
   <div class="container">
-  	<div class="row">
-  		<div class="col">
-  			<h1>Lorem ipsum dolor.</h1>
-  		</div>
-  	</div>
+    <div class="row">
+      <div class="col-2">
+        <nav class="nav flex-column">
+          <a class="nav-link" href="${pageContext.request.contextPath }/servlet06/main">메인</a>
+          <a class="nav-link" href="${pageContext.request.contextPath }/servlet06/add">추가</a>
+          <a class="nav-link" href="${pageContext.request.contextPath }/servlet06/list">목록</a>
+        </nav>
+      </div>
+      <div class="col-10">
+        <h1>할 일 목록</h1>
+        <ul>
+          <c:forEach items="${todoList }" var="todo">
+            <li>${todo }</li>
+          </c:forEach>
+        </ul>
+
+      </div>
+    </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+
+
+
+
